@@ -51,7 +51,7 @@ img {
 }
 
 .rezept-tabelle {
-    margin: 0 auto;
+    margin: auto;
     width: 90%;
     max-width: 700px;
 }
