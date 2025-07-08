@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktdetails - TECH4U</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-form label span {
+            white-space: nowrap;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form select,
+        .contact-form textarea {
+            pointer-events: auto;
+            cursor: text;
+        }
+        .submit-button {
+            background: linear-gradient(135deg, #64ffda, #1de9b6);
+            color: #0a0a0a;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background: linear-gradient(135deg, #1de9b6, #64ffda);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(100, 255, 218, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a> > 
+                    <a href="products.html">Produkte</a> > 
+                    <span>Produktdetails</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Product Detail -->
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <!-- Product Images -->
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img id="product-main-image" src="" alt="Product Image" class="product-detail-image">
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h1 id="product-title" class="product-title">Produktname</h1>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <span class="rating-text">(127 Bewertungen)</span>
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            <span id="product-price" class="current-price">CHF 0</span>
+                            <span id="product-category" class="category-badge">Kategorie</span>
+                        </div>
+
+                        <div class="product-description">
+                            <h3>Produktbeschreibung</h3>
+                            <p id="product-description">Produktbeschreibung wird hier angezeigt.</p>
+                            
+                            <h4>Highlights:</h4>
+                            <ul id="product-highlights">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-specs">
+                            <h3>Technische Daten</h3>
+                            <div id="specs-grid" class="specs-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Spezifikation:</span>
+                                    <span class="spec-value">Wert</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Form -->
+                        <div class="order-section">
+                            <div class="contact-form">
+                                <h2>Bestellinformationen</h2>
+                                <form action="bestellung-erfolg.html" method="get" target="_blank">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="firstName">Vorname <span>*</span></label>
+                                            <input type="text" id="firstName" name="firstName" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName">Nachname <span>*</span></label>
+                                            <input type="text" id="lastName" name="lastName" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">E-Mail <span>*</span></label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone">Telefon</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="street">Strasse & Hausnummer <span>*</span></label>
+                                        <input type="text" id="street" name="street" required>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="zipCode">PLZ <span>*</span></label>
+                                            <input type="text" id="zipCode" name="zipCode" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="city">Stadt <span>*</span></label>
+                                            <input type="text" id="city" name="city" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="quantity">Anzahl <span>*</span></label>
+                                        <select id="quantity" name="quantity" required>
+                                            <option value="1" selected>1 Stück</option>
+                                            <option value="2">2 Stück</option>
+                                            <option value="3">3 Stück</option>
+                                            <option value="4">4 Stück</option>
+                                            <option value="5">5 Stück</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="deliveryOption">Lieferoption <span>*</span></label>
+                                        <select id="deliveryOption" name="deliveryOption" required>
+                                            <option value="">Bitte wählen...</option>
+                                            <option value="standard">Standard (3-5 Werktage) - Kostenlos</option>
+                                            <option value="express">Express (1-2 Werktage) - CHF 15.00</option>
+                                            <option value="overnight">Overnight (nächster Werktag) - CHF 25.00</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="notes">Anmerkungen zur Bestellung</label>
+                                        <textarea id="notes" name="notes" rows="4" placeholder="Besondere Wünsche oder Anmerkungen..."></textarea>
+                                    </div>
+
+                                    <div class="total-section">
+                                        <div class="total-price">
+                                            <span class="total-label">Gesamtpreis:</span>
+                                            <span class="total-amount">CHF 0</span>
+                                        </div>
+                                        
+                                        <button type="submit" class="submit-button">Jetzt bestellen</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Video -->
+        <section class="product-video">
+            <div class="container">
+                <h3 class="section-title">Produktvideo</h3>
+                <div class="video-wrapper">
+                    <div class="video-container" id="video-container">
+                        <!-- YouTube URL would be placed here as HTML comment for specific products -->
+                        <div class="video-card-nojs">
+                            <div class="video-thumbnail-nojs" id="video-thumbnail">
+                                <img id="video-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail" class="video-thumb-img">
+                                <a href="#video-player" class="play-button-nojs">
+                                    <svg viewBox="0 0 24 24" width="60" height="60">
+                                        <circle cx="12" cy="12" r="12" fill="rgba(100, 255, 218, 0.9)"/>
+                                        <path fill="#0a0a0a" d="M10 8l6 4-6 4z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="video-embed-nojs" id="video-player">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                                        width="100%"
+                                        height="315"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                                <a href="#video-thumbnail" class="close-video-nojs">Video schliessen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h4>Detaillierte Reviews</h4>
+                            <p>Professionelle Bewertungen und Tests</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Live Demos</h4>
+                            <p>Sieh das Produkt in Aktion</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔍</div>
+                            <h4>Alle Features</h4>
+                            <p>Umfassende Produktvorstellung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="pictures/favicon.png" alt="TECH4U Logo" class="footer-logo">
+                    <p>Premium Tech Products</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="products.html#smartphones-filter">Smartphones</a></li>
+                            <li><a href="products.html#laptops-filter">Laptops</a></li>
+                            <li><a href="products.html#gaming-filter">Gaming</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 TECH4U</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

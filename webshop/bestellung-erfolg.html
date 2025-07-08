@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung Erfolgreich - TECH4U</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .success-container {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            border: 2px solid #64ffda;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            animation: bounce 1s ease-out;
+        }
+        
+        .success-container h1 {
+            color: #64ffda;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .success-container p {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #64ffda, #00bcd4);
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(100, 255, 218, 0.4);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0,0,0);
+            }
+            40%, 43% {
+                transform: translate3d(0, -15px, 0);
+            }
+            70% {
+                transform: translate3d(0, -7px, 0);
+            }
+            90% {
+                transform: translate3d(0,-2px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="success-page">
+            <div class="success-container">
+                <div class="success-icon">✅</div>
+                <h1>Bestellung abgegeben!</h1>
+                <p>Vielen Dank für Ihre Bestellung! Ihre Anfrage wurde erfolgreich übermittelt und wir werden sie schnellstmöglich bearbeiten.</p>
+                <p>Sie erhalten in Kürze eine Bestätigungsmail mit allen Details zu Ihrer Bestellung.</p>
+                <a href="iphone16.html" class="back-button">Zurück zum Produkt</a>
+                <a href="products.html" class="back-button" style="margin-left: 1rem;">Weitere Produkte</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="pictures/favicon.png" alt="TECH4U Logo" class="footer-logo">
+                    <p>Premium Tech Products</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="products.html#smartphones-filter">Smartphones</a></li>
+                            <li><a href="products.html#laptops-filter">Laptops</a></li>
+                            <li><a href="products.html#gaming-filter">Gaming</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 TECH4U</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
